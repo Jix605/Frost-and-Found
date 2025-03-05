@@ -1,0 +1,112 @@
+
+#nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+#nav a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+#nav a:hover {
+  text-decoration: underline;
+  color: #ffcccc;
+}
+
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("@/assets/background2.jpg"); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Stacks banner and content */
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main Container */
+#capstone-app {
+  width: 90%;
+  max-width: 600px;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.form-input-group {
+  width: 90%;
+  max-width: 500px;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #020202;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  max-width: 200px;
+  padding: 0.7rem;
+  background-color: #f517a4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+button:hover {
+  background-color: #218838;
+}
+
+/* Alert Messages */
+[role="alert"] {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #capstone-app {
+    width: 95%;
+    padding: 15px;
+  }
+  .form-input-group {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+  }
+}
